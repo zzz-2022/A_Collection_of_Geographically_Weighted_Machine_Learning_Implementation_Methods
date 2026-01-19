@@ -38,3 +38,8 @@ Based on literature review:
 > - **No original code or data from the referenced projects is redistributed here.**
 > - Please always refer to the original source (links provided) for software use and download.
 > - If you are an author and believe any content should be modified or removed, please kindly open an Issue.
+
+## Acknowledgment
+
+We extend our sincere gratitude to all the authors and contributors of the open-source projects, packages, and research papers listed in this catalog. Their invaluable work forms the foundation of this curated resource.
+
