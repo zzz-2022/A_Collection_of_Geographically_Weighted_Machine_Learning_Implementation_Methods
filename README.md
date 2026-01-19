@@ -2,7 +2,6 @@
 
 > **Note**: This is a curated collection of open-source implementations for geographically weighted machine learning models. This list is compiled for **reference and research purposes only**. All intellectual property rights belong to the original authors. Please respect their copyrights and cite the respective papers when using these resources.
 
-> **Notes:**
 > In geographic data research, Geographically Weighted Regression (GWR) is the most widely used spatial modeling method. While it effectively accounts for **spatial heterogeneity**, its reliance on **linear assumptions** limits its ability to capture complex **non-linear relationships** among variables. Consequently, some researchers have turned to non-linear machine learning models. However, standard machine learning models operate as **global regressions** and are often criticized for their lack of **interpretability**. Therefore, combining the strengths of spatial heterogeneity and non-linear modeling offers a promising approach to enhance both the **predictive power** and **explanatory capability** of models. Geographically Weighted Machine Learning modeling provides a valuable framework to address these challenges.
 
 ## Overview
