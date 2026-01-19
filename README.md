@@ -41,5 +41,5 @@ Based on literature review:
 
 ## Acknowledgment
 
-We extend our sincere gratitude to all the authors and contributors of the open-source projects, packages, and research papers listed in this catalog. Their invaluable work forms the foundation of this curated resource.
+We extend our sincere gratitude to all the authors and contributors of the open-source projects, packages, and research papers listed in this catalog. Their invaluable work forms the foundation of this shared resource.
 
