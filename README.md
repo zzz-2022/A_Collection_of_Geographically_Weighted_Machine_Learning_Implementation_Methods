@@ -1,6 +1,12 @@
-# A-Survey-of-GeoAI-Geographically-Weighted-Machine-Learning-methods
-This project shares implementation approaches for Geographically Weighted Machine Learning (integrating spatial heterogeneity and nonlinear), including reference projects, code, and papers. It is for reference only. Please respect the original authors' copyright.
+# Geographically Weighted Machine Learning: Implementation Resources
 
+> **Note**: This is a curated collection of open-source implementations for geographically weighted machine learning models. This list is compiled for **reference and research purposes only**. All intellectual property rights belong to the original authors. Please respect their copyrights and cite the respective papers when using these resources.
+
+> **Notes:**
+> In geographic data research, Geographically Weighted Regression (GWR) is the most widely used spatial modeling method. While it effectively accounts for **spatial heterogeneity**, its reliance on **linear assumptions** limits its ability to capture complex **non-linear relationships** among variables. Consequently, some researchers have turned to non-linear machine learning models. However, standard machine learning models operate as **global regressions** and are often criticized for their lack of **interpretability**. Therefore, combining the strengths of spatial heterogeneity and non-linear modeling offers a promising approach to enhance both the **predictive power** and **explanatory capability** of models. Geographically Weighted Machine Learning modeling provides a valuable framework to address these challenges.
+
+## Overview
+This table summarizes available tools and scripts that implement geographically weighted machine learning models, which integrate **spatial heterogeneity and non-linearity**. It focuses on their implementation characteristics and model interpretability capabilities.
 | Package / Script Name | Models Implemented | Source | Implementation | Key Notes & Interpretation Methods | Reference Papers |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **SpatialML** | Geographically Weighted Random Forest (GWRF) | [CRAN](https://cran.r-universe.dev/SpatialML) | R Package | Widely applied in research, though current official documentation is limited. | Georganos S, Grippa T, Niang Gadiaga A, et al. Geographical random forests: a spatial extension of the random forest algorithm to address spatial heterogeneity in remote sensing and population modelling[J]. Geocarto International, 2021, 36(2): 121-136. |
@@ -15,3 +21,21 @@ This project shares implementation approaches for Geographically Weighted Machin
 | — | GW-GBDT Model | [Project Page](https://shijiahao998.github.io/NYCBikeShairing/) | R Scripts | Detailed examples. Provides **local feature importance** and **ALE plots**. | Yang H, Shi J, Tao T. Where do built environment attributes most effectively influence bike sharing usage?[J]. Transportation Research Part D: Transport and Environment, 2025, 143: 104717. |
 | — | Geographically Weighted Random Forest (GWRF) | [GitHub](https://github.com/cecil8503/GWRF) | Python Scripts | Provides feature importance. Lacks PDP and similar interpretability methods; reported to have long runtime during reproduction. | Zhang Y, Ge J, Wang S, et al. Optimizing urban green space configurations for enhanced heat island mitigation: A geographically weighted machine learning approach[J]. Sustainable Cities and Society, 2025, 119: 106087. |
 | — | GWRBoost | [arXiv](https://arxiv.org/abs/2212.05814) | Python Scripts | Primarily a prediction model. **Lacks** built-in modules for interpretability analysis (e.g., feature importance, PDP). | Wang H, Huang Z, Yin G, et al. Gwrboost: a geographically weighted gradient boosting method for explainable quantification of spatially-varying relationships[J]. arXiv preprint arXiv:2212.05814, 2022. |
+
+## Research Log
+
+Based on literature review:
+
+1.  **Prevalent Tools**: The majority of the reviewed studies implemented the Geographically Weighted Random Forest (GWRF) model using the **R package `SpatialML`**, often integrating it with the **`SHAP`** package for model interpretation. A subset of research has adopted the **`GeoShapley`** library and the **`PyGRF`** library.
+
+2.  **Gap in Interpretation**: While some implementations provide **local feature importance** analysis, detailed explanations regarding **non-linear** and **threshold effects**—often visualized through methods like **Partial Dependence Plots (PDP)**—are generally not explicitly provided. A potential approach to bridge this gap is to calculate PDPs or SHAP values **for each local model** and then aggregate (e.g., average) these local results to derive global insights.
+
+> **Disclaimer**: The above points are based on my personal understanding of the current literature and are provided for reference only. Corrections and discussions are warmly welcomed.
+
+## **⚠️ Disclaimer & Purpose**
+> This repository is a **curated, non-commercial collection** compiled for **academic research and reference purposes only**. All copyrights of the original software, code, and publications belong to their respective authors and owners.
+>
+> - This list only contains **metadata, links, and personal summaries** of publicly available resources.
+> - **No original code or data from the referenced projects is redistributed here.**
+> - Please always refer to the original source (links provided) for software use and download.
+> - If you are an author and believe any content should be modified or removed, please kindly open an Issue.
